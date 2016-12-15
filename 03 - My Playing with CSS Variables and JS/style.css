@@ -1,0 +1,22 @@
+:root {
+    --base: red;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+}
+
+.js-color {
+    color: var(--base);
+}
+
+body {
+    text-align: center;
+}
