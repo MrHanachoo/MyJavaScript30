@@ -1,0 +1,45 @@
+html {
+    background: url("http://images6.fanpop.com/image/photos/38600000/Futureland-time-travel-38682176-1600-900.jpg");
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.clock {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/94930/clock2.gif");
+    background-size: cover;
+    width: 30rem;
+    height: 30rem;
+    border: 10px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    padding:20px;
+
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.hand {
+    width: 50%;
+    height: 5px;
+    background: black;
+    top: 50%;
+    position: absolute;
+    transform-origin: 100%;
+    transition: all 0.1s;
+    transition-timing-function: cubic-bezier(0.1, 1.5, 0.73, 1);
+}
+.hour-hand {
+    height: 15px;
+}
+.min-hand {
+    height: 10px;
+}
