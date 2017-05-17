@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js Keylogger</title>
+    <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+</head>
+<body>
+<script>
+    const logged = [];
+    const match = "mrhanachoo"
+    window.addEventListener("keyup", e => {
+        logged.push(e.key);
+        logged.splice(-match.length -1, logged.length - match.length);
+        console.log(logged.join(""));
+        if(logged.join("").includes(match)) {
+            console.log("It's a match !!");
+            cornify_add();
+        }
+    })
+</script>
+</body>
+</html>
